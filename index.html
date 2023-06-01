@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebe8671de6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logoo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1> Hi, I am <span>Toheed Khatik</span><br> from Maharashtra.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------- About me part------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1.jpeg" alt="">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Hi My Name Is Toheed Khatik And I Am a Web Developer. I Worked On Many Projects And Currently I Am Study Msc.IT In KBCNMU University.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br> Designing web/app interfaces</li>
+                                <li><span>Web Development</span><br> Web app Development</li>
+                                <li><span>problem solving</span><br> quiet good in problem solving</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2022</span><br> PhotoShope </li>
+                                <li><span>2021</span><br> Make a many projects </li>
+                                <li><span>2021</span><br> Inhance the ability </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Msc.IT from KBC.NMU University</li>
+                                <li><span>2019-2022</span><br>BSC.IT from H.J.Thim College</li>
+                                <li><span>2018-19</span><br> HSC from ACS College</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------services----------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Focus On the creating a user friendly Experience.Consider the target audience and their preferences,behaviors,
+                        and needs. Design intuitive navigation, clear call-to-actions and an overall layout that guides users seemlessly through the website.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>I'm a UI/UX Designer Crreate a User-Friendly interface that enable users to understand how to use complex technical products. if you are passionate about the latest tchnology trends and devices. you'll find great fulfillment in being involved in the design process for the next gadget.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>  <!--this is for design logo-->
+                    <h2>Problem solving Skill</h2>
+                    <p>Good problem solving skills invlove being able to think creatively and analytically,breaking down problems into samaller parts and using a systematic approach to find solution and solve the error with help of practice and hardwork.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="sofa.jpg" alt="work img 1">
+                    <div class="layer">
+                        <h3>Create a Web Page</h3>
+                        <p>Focus On the creating a user friendly Experience.Consider the target audience and their preferences,behaviors,
+                            and needs. Design intuitive navigation, clear call-to-actions and an overall layout that guides users seemlessly through the website.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imp.jpg" alt=" work img 2">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Using a Apache Cordova is a framework for bulid moblie apps with HTML,CSS and JavaScript . Usng This language I make a clone of Netflix and hotstar.</p>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="com.jpg" alt="work img 3">
+                    <div class="layer">
+                        <h3>Gaming App</h3>
+                        <p> I Make a Snake Game Using Python Language And Many Demo Games </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------contact----------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class = "fas fa-paper-plane"></i>khatiktoheed@gmail.com</p>
+                    <p><i class = "fas fa-phone-square-alt"></i>7709487326</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/@KhatikToheed"> <i class="fab fa-twitter-square"></i> </a>
+                        <a href="https://www.instagram.com/khatik_toheed_09/"> <i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/TOHEED KHATIK"> <i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <a href="resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name= "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="Email" name="Email" placeholder="Your email" required>
+                        <textarea type="text" name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; This is made by Toheed Khatik <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links")
+
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+
+<!-- side menue -->
+
+<script>
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu(){
+        sidemenu.style.right="0";
+       }
+       
+       function closemenu(){
+        sidemenu.style.right="-200px";
+       }
+
+</script>
+<script>
+    const scriptURL =  'https://script.google.com/macros/s/AKfycby1us1wsw7t5mi7056Cdc7iOgmoFyX0Hl2wzLBvhlf9PX6vPr_nhI9BjpcJNJoWD56pXw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully"
+            setTimeout(function(){ 
+                msg.innerHTML = ""
+          },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
